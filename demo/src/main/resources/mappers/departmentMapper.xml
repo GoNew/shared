@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis.mapper.department">
+	<select id="selectDepartmentCount" resultType="integer">
+		select		count(*)
+		from		departments
+	</select>
+	<select id="selectDepartmentMapById" parameterType="integer"
+		resultType="hashmap">
+		select		*
+		from		departments
+		where		department_id=#{departmentId}
+	</select>
+	<select id="selectDepartmentById" parameterType="integer"
+		resultType="Department">
+		select		*
+		from		departments
+		where		department_id=#{departmentId}
+	</select>
+</mapper>
