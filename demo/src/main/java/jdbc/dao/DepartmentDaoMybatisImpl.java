@@ -55,8 +55,9 @@ public class DepartmentDaoMybatisImpl implements DepartmentDao{
 
 	@Override
 	public List<Department> getAllDepartments() {
-		// TODO Auto-generated method stub
-		return null;
+		String stmt = namespace + ".selectAllDepartments";
+		List<Department> result = sqlSession.selectList(stmt);
+		return result;
 	}
 
 	@Override

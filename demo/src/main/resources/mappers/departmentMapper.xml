@@ -19,4 +19,8 @@
 		from		departments
 		where		department_id=#{departmentId}
 	</select>
+	<select id="selectAllDepartments" resultType="Department">
+		select		*
+		from		departments
+	</select>
 </mapper>
