@@ -6,10 +6,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Welcome</title>
-		<link href="<%= request.getContextPath() %>/css/hello.css" rel="stylesheet" />
 	</head> 
 	<body>
-		<h2>${message}</h2>
-		<img src="<%= request.getContextPath() %>/img/Penguins.jpg" />
+		<h2>${name}</h2>
+		<h2>${age}</h2>
 	</body>
 </html>

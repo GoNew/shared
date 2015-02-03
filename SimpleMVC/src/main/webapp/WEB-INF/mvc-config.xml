@@ -29,5 +29,8 @@
 	<bean id="excelView" class="simple.view.MyExcelView"></bean>
 	
 	<context:component-scan base-package="simple.controller"></context:component-scan>
-
+	
+	<mvc:resources location="/WEB-INF/img/" mapping="/img/**"/>
+	<mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
+	
 </beans>
