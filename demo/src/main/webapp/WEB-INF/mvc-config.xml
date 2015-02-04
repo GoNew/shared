@@ -19,6 +19,11 @@
 	        <property name="suffix" value=".jsp"/>
 	</bean>
 	
+	<bean id="multipartResolver"
+	class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
+	
 	<context:component-scan base-package="jdbc.controller"></context:component-scan>	
+	
+	<mvc:resources location="/WEB-INF/upload/" mapping="/upload/**"/>
 
 </beans>

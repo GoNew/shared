@@ -23,4 +23,12 @@
 		select		*
 		from		departments
 	</select>
+	
+	<update id="updateDepartment" parameterType="Department">
+		update		departments
+		set			department_name=#{departmentName},
+					manager_id=#{managerId},
+					location_id=#{locationId}
+		where		department_id=#{departmentId}
+	</update>
 </mapper>

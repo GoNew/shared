@@ -86,8 +86,9 @@ public class DepartmentDaoMybatisImpl implements DepartmentDao{
 
 	@Override
 	public int updateDepartment(Department dept) {
-		// TODO Auto-generated method stub
-		return 0;
+		String stmt = namespace + ".updateDepartment";
+		int result = sqlSession.update(stmt, dept);
+		return result;
 	}
 
 	@Override

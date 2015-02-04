@@ -9,8 +9,10 @@
 	<typeAliases>
 		<typeAlias type="jdbc.entity.Department" alias="Department"/>
 		<typeAlias type="jdbc.entity.Employee" alias="Employee"/>
+		<typeAlias type="jdbc.entity.ChatBoard" alias="ChatBoard"/>
 	</typeAliases>
 	<mappers>
 		<mapper resource="mappers/departmentMapper.xml" />
+		<mapper resource="mappers/chatMapper.xml" />
 	</mappers>
 </configuration>

@@ -23,7 +23,12 @@
 				<td><%=dept.getDepartmentName() %></td>
 				<td><%=dept.getManagerId() %></td>
 				<td><%=dept.getLocationId() %></td>
-				<td></td>
+				<td>
+					<a href="<%=request.getContextPath() %>/dept?departmentId=<%=dept.getDepartmentId() %>">
+					<button>상세보기</button></a>
+					<a href="<%=request.getContextPath() %>/dept/edit?departmentId=<%=dept.getDepartmentId() %>">
+					<button>수정하기</button></a>
+				</td>
 			</tr>
 			<%
 				}

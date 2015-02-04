@@ -24,5 +24,12 @@
         driverClassName="oracle.jdbc.driver.OracleDriver"
         url="jdbc:oracle:thin:@localhost:1521:XE"/>
     
+    <Resources>
+    	<PreResources 
+    		className="org.apache.catalina.webresources.DirResourceSet"
+    		base="c:\db\uploaded\"
+    		webAppMount="/WEB-INF/upload"
+    	></PreResources>
+    </Resources>
     
 </Context>
